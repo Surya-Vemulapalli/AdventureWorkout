@@ -1,3 +1,11 @@
+/*
+names: 
+Colin Chandel
+Surya Vemulapalli
+Andy Ziang
+Malathi Vedula
+*/
+
 import './App.css';
 import Question from './question.js';
 import Generate from './generate.js';
