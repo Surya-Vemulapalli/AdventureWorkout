@@ -11,9 +11,15 @@ const Question = (params) => {
     // list of divs, each with a checkbox and description
     const checkboxes = []
     
+    /*
+        https://stackoverflow.com/questions/22876978/loop-inside-react-jsx
+        for idea of adding a list of elements
+    */
     for (const option of params.options) {
         /* 
-            For each option, add a checkbox
+            For each option, add a checkbox and a the label indicating what clicking the checkbox chooses.
+            Note: users may click multiple checkboxes. In the future, we could make "no preference" automatically uncheck other boxes, and vice versa,
+                but we don't have time now.
         */
         checkboxes.push(
             <div key={option} className="checkbox-container">
