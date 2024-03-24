@@ -1,8 +1,10 @@
 import "./question.css"
-const Question = (options) => {
+// TODO: rename params
+const Question = (params) => {
 
     const checkboxes = []
-    for (const option of options.options) {
+    
+    for (const option of params.options) {
         checkboxes.push(
             <div key={option} className="checkbox-container">
                 <input type="checkbox" id={option} name={option} value={option}></input>
@@ -10,8 +12,9 @@ const Question = (options) => {
             </div>
         )
     }
+    
     return (
-        <div className="checkboxes">
+        <div id={params.category} className="checkboxes">
             {checkboxes}
         </div>
     )

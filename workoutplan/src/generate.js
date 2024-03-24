@@ -9,14 +9,42 @@ const Generate = () => {
     })
     */
    useEffect(() => {
+    console.log(document.getElementById('type'))
     // code to run after render goes here
     const generateButton = document.getElementById("generate")
     const checkboxCardio = document.getElementById("cardio")
 
     generateButton.addEventListener('click', e => {
-        console.log(checkboxCardio.checked)
+
+        const typeChecks = Array(...document.getElementById('type').children).map(container => {
+          return {
+            'choice': container.children[0].name,
+            'value': container.children[0].checked,
+          }
+        })
+        const areaChecks = Array(...document.getElementById('area').children).map(container => {
+          return {
+            'choice': container.children[0].name,
+            'value': container.children[0].checked,
+          }
+        })
+        const lengthChecks = Array(...document.getElementById('length').children).map(container => {
+          return {
+            'choice': container.children[0].name,
+            'value': container.children[0].checked,
+          }
+        })
+        const equipmentChecks = Array(...document.getElementById('equipment').children).map(container => {
+          return {
+            'choice': container.children[0].name,
+            'value': container.children[0].checked,
+          }
+        })
+        
+        //console.log(typeChecks)
+
         /* checkbox data form:
-          typeChecks = [{choice: "cardio", value: true}, ...]
+          typeChecks = [{choice: "cardio", value: true}, {choice: 'strength', value: false}...]
           areaChecks = [{choice: "legs", value: <Boolean>, ...}]
           lengthChecks = [...]
           equipmentChecks = [...]
