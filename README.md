@@ -1,6 +1,7 @@
 # AdventureWorkout
 
 Instructions: 
+Using command prompt
 clone repo with
 git clone https://github.com/Surya-Vemulapalli/AdventureWorkout.git
 
