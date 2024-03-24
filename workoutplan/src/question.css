@@ -1,0 +1,9 @@
+.checkboxes {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.checkbox-container{
+    display: flex;
+}
