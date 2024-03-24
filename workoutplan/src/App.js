@@ -2,8 +2,8 @@
 names: 
 Colin Chandel
 Surya Vemulapalli
-Andy Ziang
-Malathi Vedula
+Andy Liang
+Mahati Vedula
 */
 
 import './App.css';
