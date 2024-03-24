@@ -3,8 +3,10 @@ import workoutData from './workouts.json'
 
 let workoutState = {
   generated: false,
-  suggestions: []
+  suggestions: [],
+  suggestionDivs: []
 }
+const numSuggestions = 3
 
 const Generate = () => {
     /*
@@ -24,6 +26,7 @@ const Generate = () => {
 
       workoutState.generated = true
       workoutState.suggestions = []
+      workoutState.suggestionDivs = []
 
       const typeChecks = Array(...document.getElementById('type').children).map(container => {
         return {
@@ -135,19 +138,28 @@ const Generate = () => {
         })
       }
       workoutState.suggestions.sort((b, a) => a.value - b.value)
+      workoutState.suggestionDivs = workoutState.suggestions.slice(0, numSuggestions).map((suggestion, i) => 
+        <div key={i}>
+          <h4>
+          <a href={suggestion.url}>
+            {suggestion.title}
+            </a>
+          </h4>
+        </div>
+      )
+      console.log(workoutState.suggestionDivs)
       setState(workoutState)
     })
   }, [])
 
   if (workoutState.generated) {
+    console.log(workoutState.generated)
     return (
       <div>
         <button id="generate" type="button">Generate Workout</button>
-        <h4>
-        <a href={workoutState.suggestions[0].url}>
-          {workoutState.suggestions[0].title}
-          </a>
-        </h4>
+        <div>
+          {workoutState.suggestionDivs}
+        </div>
       </div>
     )
   } else {
