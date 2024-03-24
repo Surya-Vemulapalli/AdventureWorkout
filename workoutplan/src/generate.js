@@ -28,25 +28,26 @@ const Generate = () => {
       workoutState.suggestions = []
       workoutState.suggestionDivs = []
 
-      const typeChecks = Array(...document.getElementById('type').children).map(container => {
+      // note: changing return value of Question from question.js, debug this
+      const typeChecks = Array(...document.getElementById('type').children).slice(1).map(container => {
         return {
           'choice': container.children[0].name,
           'value': container.children[0].checked,
         }
       })
-      const areaChecks = Array(...document.getElementById('area').children).map(container => {
+      const areaChecks = Array(...document.getElementById('area').children).slice(1).map(container => {
         return {
           'choice': container.children[0].name,
           'value': container.children[0].checked,
         }
       })
-      const lengthChecks = Array(...document.getElementById('length').children).map(container => {
+      const lengthChecks = Array(...document.getElementById('length').children).slice(1).map(container => {
         return {
           'choice': container.children[0].name,
           'value': container.children[0].checked,
         }
       })
-      const equipmentChecks = Array(...document.getElementById('equipment').children).map(container => {
+      const equipmentChecks = Array(...document.getElementById('equipment').children).slice(1).map(container => {
         return {
           'choice': container.children[0].name,
           'value': container.children[0].checked,

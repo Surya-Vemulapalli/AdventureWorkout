@@ -12,7 +12,9 @@ const Question = (params) => {
     const checkboxes = []
     
     for (const option of params.options) {
-        // 
+        /* 
+            For each option, add a checkbox
+        */
         checkboxes.push(
             <div key={option} className="checkbox-container">
                 <input type="checkbox" id={option} name={option} value={option}></input>
@@ -21,6 +23,7 @@ const Question = (params) => {
         )
     }
     
+    // Note: when altering this structure, debug generate.js (would restructure better if more time)
     return (
         <div id={params.category} className="checkboxes">
             <p>{params.category + ": "}</p>
