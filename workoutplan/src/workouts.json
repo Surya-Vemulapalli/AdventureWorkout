@@ -1,0 +1,20 @@
+{
+    "workouts": [
+        {
+            "url": "https://docs.google.com/document/d/1bzEiWoql-V8b91ymA2XKMjtM8FOCLpBtvceBqekxoJc/edit",
+            "title": "Doc",
+            "type": "cardio",
+            "area": "legs",
+            "length": 6.1,
+            "equipment": "weights"
+        },
+        {
+            "url": "https://hack.mlh.io/hoohacks-ef/prizes",
+            "title": "HooHacks",
+            "type": "strength",
+            "area": "arms",
+            "length": 14,
+            "equipment": "treadmill"
+        }
+    ]
+}
