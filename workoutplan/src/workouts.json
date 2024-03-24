@@ -1,20 +1,133 @@
 {
     "workouts": [
         {
-            "url": "https://docs.google.com/document/d/1bzEiWoql-V8b91ymA2XKMjtM8FOCLpBtvceBqekxoJc/edit",
-            "title": "Doc",
-            "type": "cardio",
+            "url": "https://open.spotify.com/episode/3LAHmhjsJeB5fJIfY2ho5c?si=9bd5d7bfe58a49ec",
+            "title": "The City Bank Heist",
+            "type": "strength",
             "area": "legs",
-            "length": 6.1,
+            "length": 10,
+            "equipment": "none"
+        },
+            {
+            "url": "https://open.spotify.com/episode/4IQaoKIwfri6eoD0bmFCrP?si=934c940860ac40d1",
+            "title": "Jungle Trek",
+            "type": "cardio",
+            "area": "core",
+            "length": 15,
+            "equipment": "space to run"
+        },
+            {
+            "url": "insert url here",
+            "title": "Explore Atlantis",
+            "type": "cardio",
+            "area": "core",
+            "length": 15,
+            "equipment": "pool"
+            },
+        {
+            "url": "insert url here",
+            "title": "Escape the Pyramid",
+            "type": "interval",
+            "area": "legs",
+            "length": 13,
             "equipment": "weights"
         },
         {
-            "url": "https://hack.mlh.io/hoohacks-ef/prizes",
-            "title": "HooHacks",
+            "url": "insert url here",
+            "title": "The Blowing Bridge",
+            "type": "yoga",
+            "area": "core",
+            "length": 8,
+            "equipment": "none"
+        },
+        {
+            "url": "insert url here",
+            "title": "Chase with the Mafia Man",
+            "type": "cardio",
+            "area": "core",
+            "length": 12,
+            "equipment": "space to run"
+        },
+        {
+            "url": "insert url here",
+            "title": "MMA Boxing Tournament",
             "type": "strength",
             "area": "arms",
-            "length": 14,
-            "equipment": "treadmill"
+            "length": 6,
+            "equipment": "weights"
+        },
+        {
+            "url": "insert url here",
+            "title": "The Mountain of Winds",
+            "type": "yoga",
+            "area": "core",
+            "length": 15,
+            "equipment": "none"
+        },
+        {
+            "url": "insert url here",
+            "title": "Lost in the Bermuda",
+            "type": "cardio",
+            "area": "core",
+            "length": 9,
+            "equipment": "pool"
+        },
+        {
+            "url": "insert url here",
+            "title": "The Mountain of Winds",
+            "type": "yoga",
+            "area": "core",
+            "length": 15,
+            "equipment": "none"
+        },
+        {
+            "url": "insert url here",
+            "title": "Escape From Alcatraz",
+            "type": "cardio",
+            "area": "core",
+            "length": 17,
+            "equipment": "space to run"
+        },
+        {
+            "url": "insert url here",
+            "title": "The Cave of Darkness",
+            "type": "strength",
+            "area": "legs",
+            "length": 13,
+            "equipment": "weights"
+        },
+        {
+            "url": "insert url here",
+            "title": "The Sword of the Samurai",
+            "type": "stength",
+            "area": "arms",
+            "length": 12,
+            "equipment": "weight"
+        },
+        {
+            "url": "insert url here",
+            "title": "Walk the Plank",
+            "type": "strength",
+            "area": "core",
+            "length": 5,
+            "equipment": "none"
+        },
+        {
+            "url": "insert url here",
+            "title": "Zenmaster",
+            "type": "yoga",
+            "area": "legs",
+            "length": 25,
+            "equipment": "none"
+        },
+        {
+            "url": "insert url here",
+            "title": "Dungeon Fighter",
+            "type": "interval training",
+            "area": "arms",
+            "length": 23,
+            "equipment": "weights"
         }
+            
     ]
 }

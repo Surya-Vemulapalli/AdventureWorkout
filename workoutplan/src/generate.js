@@ -20,7 +20,7 @@ const Generate = () => {
    useEffect(() => {
     // code to run after render goes here
     const generateButton = document.getElementById("generate")
-    setState(workoutState)
+    setState(workoutState.suggestionDivs)
 
     generateButton.addEventListener('click', e => {
 
@@ -139,7 +139,7 @@ const Generate = () => {
       }
       workoutState.suggestions.sort((b, a) => a.value - b.value)
       workoutState.suggestionDivs = workoutState.suggestions.slice(0, numSuggestions).map((suggestion, i) => 
-        <div key={i}>
+        <div className="suggestion" key={i}>
           <h4>
           <a href={suggestion.url}>
             {suggestion.title}
@@ -147,19 +147,15 @@ const Generate = () => {
           </h4>
         </div>
       )
-      console.log(workoutState.suggestionDivs)
-      setState(workoutState)
+      setState(workoutState.suggestionDivs)
     })
   }, [])
 
   if (workoutState.generated) {
-    console.log(workoutState.generated)
     return (
       <div>
         <button id="generate" type="button">Generate Workout</button>
-        <div>
-          {workoutState.suggestionDivs}
-        </div>
+        {state}
       </div>
     )
   } else {
