@@ -10,6 +10,16 @@ import './App.css';
 import Question from './question.js';
 import Generate from './generate.js';
 
+/*
+ * This folder was initially generated using Create React App, according to the instructions at:
+ *  https://create-react-app.dev/docs/getting-started/
+ */
+
+/**
+ * 4 multiple-choice survey questions, answered via checkboxex,
+ * followed by a button to generate the workout. WHen the button is clicked, a select number (3, at the moment)
+ * of titles of workout tracks with either real or hypothetical hyperlinks
+ */
 function App() {
   return (
     <div className="App">
