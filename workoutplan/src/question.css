@@ -2,8 +2,20 @@
     display: flex;
     justify-content: space-evenly;
 
+    margin: 40px;
+    background: rgba(173, 166, 166, 0.3);
+    color: #dfd4d4;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
 .checkbox-container{
     display: flex;
+    color: black;
+    font: "Copperplate"
+}
+
+.questionLabel {
+    display: flex;
+    color: black;
+    font: "Copperplate"
 }

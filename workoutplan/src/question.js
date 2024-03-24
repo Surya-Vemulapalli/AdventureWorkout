@@ -23,7 +23,7 @@ const Question = (params) => {
     
     return (
         <div id={params.category} className="checkboxes">
-            <p>{params.category + ": "}</p>
+            <p className = "questionLabel">{params.category + ": "}</p>
             {checkboxes}
         </div>
     )
