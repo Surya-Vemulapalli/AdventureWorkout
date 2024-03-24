@@ -13,11 +13,12 @@ const Generate = () => {
         console.log(checkboxCardio.value)
     })
     */
-    const [generated, setGenerated] = useState(0)
+    const [state, setState] = useState(0)
 
    useEffect(() => {
     // code to run after render goes here
     const generateButton = document.getElementById("generate")
+    setState(workoutState)
 
     generateButton.addEventListener('click', e => {
 
@@ -134,13 +135,11 @@ const Generate = () => {
         })
       }
       workoutState.suggestions.sort((b, a) => a.value - b.value)
-      setGenerated(true)
+      setState(workoutState)
     })
   }, [])
 
-  console.log(workoutState.generated)
   if (workoutState.generated) {
-    console.log(workoutState.suggestions[0].url)
     return (
       <div>
         <button id="generate" type="button">Generate Workout</button>
